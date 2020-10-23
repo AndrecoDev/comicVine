@@ -1,0 +1,35 @@
+.landingPage__options {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 2rem;
+}
+.landingPage__options > ul {
+    list-style: none;
+}
+.landingPage__options > ul > li {
+    display: inline;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+.landingPage__comics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    max-height: 100%;
+    position: relative;
+}
+.landingPage__comics2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 2rem;
+    width: 20%;
+}
+hr {
+    border: 1px solid #ccc;
+    margin: 0 2rem;
+}
+@media (max-width: 767px) {
+    .landingPage__comics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
